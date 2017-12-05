@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.keremkucuk.lapitchat.StartActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Welcome to Lapit Chat"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/startRegBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingLeft="33dp"
+        android:paddingRight="33dp"
+        android:text="@string/need_a_new_account"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startRegBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Already have an Account?" />
+</RelativeLayout>

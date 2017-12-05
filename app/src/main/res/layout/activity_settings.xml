@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.keremkucuk.lapitchat.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/default_picture" />
+
+    <TextView
+        android:id="@+id/settings_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Display Name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_displayName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Hi there, I'm using Foodster App"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/settings_btnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:text="Change Image"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/settings_btnStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/settings_btnImage"
+        android:layout_below="@+id/settings_btnImage"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Change Status"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
